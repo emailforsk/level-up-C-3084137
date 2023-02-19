@@ -10,6 +10,8 @@ char *ordinal(int v)
 	char ret_val[3] = {0};
 	switch(ordinal)
 	{
+		case 1: strcpy(ret_val,"st");
+			break;
 		case 2: strcpy(ret_val,"nd");
 			break;
 		case 3:strcpy(ret_val,"rd");
