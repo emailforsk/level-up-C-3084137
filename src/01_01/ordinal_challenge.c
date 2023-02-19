@@ -6,6 +6,20 @@ char *ordinal(int v)
 	   - create this function
 	   - this code won't run with out it!
 	 */
+	int ordinal = v%10;
+	char ret_val[3] = {0};
+	switch(ordinal)
+	{
+		case 2: strcpy(ret_val,"nd");
+			break;
+		case 3:strcpy(ret_val,"rd");
+			break;
+		default: strcpy(ret_val,"th");
+			 break;
+			
+	  return ret_val;
+		
+	}
 }
 
 int main()
